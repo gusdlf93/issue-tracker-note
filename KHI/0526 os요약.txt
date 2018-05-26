@@ -1,0 +1,112 @@
+시간적 흐름에 따라서 진행
+#1
+1. preparation
+	-git
+	-development Env.
+	1) WSL(Ubuntu) 느려용
+ 	1_2) Terminal AWS
+
+	2) VirtualBox
+
+2. Finding own Project	
+	- github trending
+	- 
+	프로젝트를 어떻게 찾았는지(줬던 많은 싸이트들)
+	- game /Deep learning 카테고리를 보고 흥미가 가는걸 하나 선택해서 했습니다
+	- 수업에 사용되기는 힘들었다   - 너무 마이너했음
+	(수업에 필요한 프로젝트는 강사가 찾아야 했었습니다.)
+	해당하는 Keras에 대한 내용들도 넣어주세요
+
+어떤 방식으로 진행을 했었고, 현재 진행을 하고 있는 건지,
+왜 넘어갔는지, review를 하나하나 다 남겨줘야 합니다.
+
+3.
+어떤 식의 기여가 가능한가?
+1) DOcumentation
+2) Issue Reporting (테스트 해봤는데 어땠더랑..)
+3) Codeing Style ()
+4) 정적분석 툴, 동적분석
+
+4. Open Source Software 기여에는 어떤 기초들이 필요했는가? 
+- Coding / Data Struction / Algorithm / Computer Science
+- 해당 과목에 대해서 기초를 쌓기 위해서 leetcode와 hacker lank, 등 알고리즘 공부들을 수행하였습니다. + 네트워크 영상 관련 자료들 본것도 정리해서 넣어주세욥.
+- ppt 한장 한장에 그림을 많이 넣고, 글은 조금만 넣어주세요.
+- 발표자 도구, 슬라이드 노드 마스터에다가 해당하는 내용들을 넣어줘야 합니다.
+
+#2 Godot / Keras
+1. 소개
+2. 환경 / 빌드 / 개발
+3. 어떻게 찾아보고, 어떻게 기여했는지.
+4. 향후 Plan
+	발표했던 내용들을 정리해서 올려주세욥. 교재라고 생각해주시면 감사하겠습니다.
+#3 quiver / Kernel
+이슈를 먼저 만들고, 컨트리뷰션을 날려야 합니다.
+
+Kernel
+patch -> 보낼 겁니다.
+
+# conflic 해결하는 시간
+1. create repository
+
+2. remote add upstream......
+ 
+3. git branch -a
+	master -> *master
+	remotes/origin/master
+	remote/upstream/master
+
+일반적으로 commit 돌아가는 방식 :
+
+1. git checkout master
+2. git fetch upstream
+3. git rebase upstream
+..or merge upstream
+4. git checkout dev-1
+5. git rebase master
+
+fork
+branch
+commit
+pr
+push
+
+cherry-pick = 뒷단에다가 하나하나 붙여주는 명령어
+
+1. mastser
+2. git fetch upstream
+3. master
+(git merge upstream)
+4. git co -b update1-0526
+5. git push origin update1-0526
+6. PR.. up-  -> master
+
+
+일반적으로 문제가 발생할시 
+Ctrl + r
+sudo !!
+히스토리에서 명령어 가져오는거.
+
+
+--------------------------------------------------
+1. AWS / ncloud / C9
+AWS 아마 1년 무료가 있을 겁니다 한번 조사해서 오세요.
+사용법 알아오기.
+
+
+smtp 사용법
+vi ~/.gitconfig
+[sendemail]
+from = YourName <email@gmail.com>
+smtpserver = smtp.naver.com
+smtpuser = email@gmail.com
+smtpencryption = tls
+smtppass = PASSWORD
+chainreplyto = false
+smtpserverport = 587
+
+sudo apt install git-email
+
+cd staging/
+git format=patch head^ -o ../.
+git send_email --to email@naver.ciom ../.......patch
+smtp 보내는거 숙제로 한번 보내보기.
